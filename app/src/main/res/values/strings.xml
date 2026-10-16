@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">KasirKopi</string>
+
+    <!-- Judul dan bagian layar -->
+    <string name="judul_layar">Kasir Kedai Kopi</string>
+    <string name="judul_form">Tambah Pesanan</string>
+    <string name="judul_keranjang">Keranjang</string>
+    <string name="judul_pembayaran">Pembayaran</string>
+    <string name="judul_ringkasan">Ringkasan Penjualan</string>
+
+    <!-- Formulir pesanan -->
+    <string name="label_menu">Pilih menu</string>
+    <string name="label_jumlah">Jumlah (1-20)</string>
+    <string name="label_varian">Varian minuman</string>
+    <string name="varian_panas">Panas</string>
+    <string name="varian_dingin">Dingin (+Rp2.000 per gelas)</string>
+    <string name="tombol_tambah">Tambah ke keranjang</string>
+    <string name="error_jumlah_kosong">Jumlah wajib diisi</string>
+    <string name="error_jumlah_tidak_valid">Jumlah harus angka 1 sampai 20</string>
+
+    <!-- Keranjang -->
+    <string name="keranjang_kosong">Keranjang masih kosong. Pilih menu lalu tekan Tambah ke keranjang.</string>
+    <string name="varian_item_panas">panas</string>
+    <string name="varian_item_dingin">dingin</string>
+    <string name="format_item">%1$d x %2$s</string>
+    <string name="format_item_varian">%1$d x %2$s (%3$s)</string>
+    <string name="format_rupiah">Rp%1$s</string>
+    <string name="deskripsi_hapus">Hapus item dari keranjang</string>
+    <string name="deskripsi_ikon_menu">Ikon menu kedai kopi</string>
+
+    <!-- Subtotal, diskon, total -->
+    <string name="label_subtotal">Subtotal</string>
+    <string name="label_diskon">Diskon 10 persen</string>
+    <string name="label_total">Total bayar</string>
+
+    <!-- Pembayaran -->
+    <string name="label_uang">Uang dibayarkan (Rp)</string>
+    <string name="error_uang_kosong">Uang yang dibayarkan wajib diisi</string>
+    <string name="error_uang_tidak_valid">Isi dengan angka yang benar</string>
+    <string name="error_uang_kurang">Uang kurang dari total bayar</string>
+    <string name="tombol_bayar">Bayar</string>
+    <string name="label_kembalian">Kembalian</string>
+    <string name="pesan_berhasil">Pembayaran berhasil</string>
+
+    <!-- Ringkasan sejak aplikasi dibuka -->
+    <string name="label_jumlah_transaksi">Jumlah transaksi</string>
+    <string name="label_total_penjualan">Total penjualan</string>
 </resources>
