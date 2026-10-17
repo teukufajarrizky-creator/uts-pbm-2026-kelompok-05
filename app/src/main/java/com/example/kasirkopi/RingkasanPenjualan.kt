@@ -21,4 +21,8 @@ fun RingkasanPenjualan(
         label = R.string.label_jumlah_transaksi,
         nilai = jumlahTransaksi
     )
+    BarisHarga(
+        label = R.string.label_total_penjualan,
+        nilai = totalPenjualan
+    )
 }
