@@ -17,4 +17,8 @@ fun RingkasanPenjualan(
         text = stringResource(R.string.judul_ringkasan),
         style = MaterialTheme.typography.titleMedium
     )
+    BarisHarga(
+        label = R.string.label_jumlah_transaksi,
+        nilai = jumlahTransaksi
+    )
 }
