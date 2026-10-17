@@ -53,10 +53,7 @@ fun KasirScreen(modifier: Modifier = Modifier) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        Text(
-            text = stringResource(R.string.judul_layar),
-            style = MaterialTheme.typography.headlineSmall
-        )
+        HeaderKedai()
 
         FormPesanan(
             onTambah = { menu, jumlah, dingin ->
