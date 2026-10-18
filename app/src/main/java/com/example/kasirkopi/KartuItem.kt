@@ -1,17 +1,19 @@
 package com.example.kasirkopi
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 
-// Kartu satu item keranjang dengan tombol hapus (kerangka dari ketua, diisi oleh Tara)
+// Kartu satu item keranjang dengan tombol hapus
 @Composable
 fun KartuItem(
     item: ItemKeranjang,
@@ -21,32 +23,46 @@ fun KartuItem(
     Card(
         modifier = modifier.fillMaxWidth()
     ) {
-        Column(
-            modifier = Modifier.padding(12.dp)
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp)
         ) {
-            Text(
-                text = item.menu.nama,
-                style = MaterialTheme.typography.titleMedium
-            )
-            Text(
-                text = "${item.jumlah} x ${item.menu.nama}",
-                style = MaterialTheme.typography.bodyMedium
-            )
-
-            if (item.menu.kategori == Kategori.MINUMAN) {
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                // Menampilkan nama menu
                 Text(
-                    text = if (item.dingin) {
-                        stringResource(R.string.varian_item_dingin)
-                    } else {
-                        stringResource(R.string.varian_item_panas)
-                    },
+                    text = item.menu.nama,
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                // Menampilkan jumlah pesanan
+                Text(
+                    text = "${item.jumlah} x ${item.menu.nama}",
                     style = MaterialTheme.typography.bodyMedium
                 )
+
+                // Menampilkan varian hanya untuk minuman
+                if (item.menu.kategori == Kategori.MINUMAN) {
+                    Text(
+                        text = if (item.dingin) {
+                            stringResource(R.string.varian_item_dingin)
+                        } else {
+                            stringResource(R.string.varian_item_panas)
+                        },
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                }
+
+                // Menampilkan subtotal harga
+                Text(
+                    text = rupiah(hitungSubtotalItem(item)),
+                    style = MaterialTheme.typography.titleMedium
+                )
             }
-            Text(
-                text = rupiah(hitungSubtotalItem(item)),
-                style = MaterialTheme.typography.titleMedium
-            )
+
+            // Tombol untuk menghapus item
             Button(
                 onClick = onHapus
             ) {
@@ -54,7 +70,6 @@ fun KartuItem(
                     text = stringResource(R.string.deskripsi_hapus)
                 )
             }
-
         }
     }
 }
