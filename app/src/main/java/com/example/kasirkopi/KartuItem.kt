@@ -43,6 +43,10 @@ fun KartuItem(
                     style = MaterialTheme.typography.bodyMedium
                 )
             }
+            Text(
+                text = rupiah(hitungSubtotalItem(item)),
+                style = MaterialTheme.typography.titleMedium
+            )
         }
     }
 }
