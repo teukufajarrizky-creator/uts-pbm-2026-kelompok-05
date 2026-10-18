@@ -47,6 +47,14 @@ fun KartuItem(
                 text = rupiah(hitungSubtotalItem(item)),
                 style = MaterialTheme.typography.titleMedium
             )
+            Button(
+                onClick = onHapus
+            ) {
+                Text(
+                    text = stringResource(R.string.deskripsi_hapus)
+                )
+            }
+
         }
     }
 }
