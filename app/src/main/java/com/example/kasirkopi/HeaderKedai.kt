@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.aligment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-impoert androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.dp
 
 // Header layar berisi ikon dan judul (kerangka dari ketua, diisi oleh Rani)
 @Composable
