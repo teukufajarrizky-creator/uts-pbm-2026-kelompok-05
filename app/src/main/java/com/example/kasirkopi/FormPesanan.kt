@@ -26,12 +26,18 @@ fun FormPesanan(
     onTambah: (MenuItem, Int, Boolean) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    // Menu yang sedang dipilih di formulir
     var menuTerpilih by remember { mutableStateOf(daftarMenu[0]) }
+    // Teks jumlah yang diketik pengguna
     var jumlahTeks by remember { mutableStateOf("") }
+    // True bila minuman dipilih dingin
     var dingin by remember { mutableStateOf(false) }
 
+    // Hasil ubah teks ke angka 1-20, atau null bila tidak valid
     val jumlah = parseJumlah(jumlahTeks)
+    // Pesan error hanya muncul bila ada isian yang tidak valid
     val jumlahError = jumlahTeks.isNotBlank() && jumlah == null
+    // Pilihan panas/dingin hanya untuk minuman
     val adalahMinuman = menuTerpilih.kategori == Kategori.MINUMAN
 
     Column(
