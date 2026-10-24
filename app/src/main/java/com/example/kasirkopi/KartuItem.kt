@@ -37,9 +37,13 @@ fun KartuItem(
                     style = MaterialTheme.typography.titleMedium
                 )
 
-                // Menampilkan jumlah pesanan
+                // Menampilkan jumlah pesanan (teks diambil dari strings.xml)
                 Text(
-                    text = "${item.jumlah} x ${item.menu.nama}",
+                    text = stringResource(
+                        R.string.format_item,
+                        item.jumlah,
+                        item.menu.nama
+                    ),
                     style = MaterialTheme.typography.bodyMedium
                 )
 
