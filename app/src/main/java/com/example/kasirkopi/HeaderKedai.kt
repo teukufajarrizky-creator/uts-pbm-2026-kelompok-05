@@ -1,5 +1,6 @@
 package com.example.kasirkopi
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -25,11 +26,16 @@ fun HeaderKedai(modifier: Modifier = Modifier) {
             .padding(16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Icon(
-            painter = painterResource(id = R.drawable.ic_kopi),
-            contentDescription = stringResource(R.string.deskripsi_ikon_menu),
-            modifier = Modifier.size(40.dp)
-        )
+        Box(
+            modifier = Modifier.size(48.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_kopi),
+                contentDescription = stringResource(R.string.deskripsi_ikon_menu),
+                modifier = Modifier.size(40.dp)
+            )
+        }
         Spacer(modifier = Modifier.width(12.dp))
         Text(
             text = stringResource(R.string.judul_layar),
