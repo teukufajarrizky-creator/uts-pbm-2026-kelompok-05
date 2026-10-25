@@ -4,7 +4,7 @@ package com.example.kasirkopi
 const val TAMBAHAN_DINGIN = 2000
 
 // Batas subtotal untuk mendapat diskon, dan persen diskonnya
-const val BATAS_DISKON = 100000
+const val BATAS_DISKON = 500000
 const val PERSEN_DISKON = 10
 
 // Batas jumlah pesanan per item
