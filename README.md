@@ -19,7 +19,7 @@ Dosen: Rivansyah Suhendra, S.Kom., M.T.
 
 ## Video Presentasi
 
-[UTS PBM 2026 – Kelompok 05 – Kasir Kedai Kopi](LINK_YOUTUBE_ISI_DI_SINI)
+[UTS PBM 2026 – Kelompok 05 – Kasir Kedai Kopi](https://youtu.be/DX6TRxHxpO4?si=KWnA6z_JduGPiEpp)
 
 ## Tentang Aplikasi
 
