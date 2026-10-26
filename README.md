@@ -11,11 +11,11 @@ Dosen: Rivansyah Suhendra, S.Kom., M.T.
 
 | No | Nama | NIM | Akun GitHub | Bagian kode |
 |----|------|-----|-------------|-------------|
-| 1 | Teuku Fajar Rizki (ketua) | NIM_ISI_DI_SINI | teukufajarrizky-creator | `Model.kt`, `Logika.kt`, `LogikaTest.kt`, `KasirScreen.kt`, `MainActivity.kt`, `strings.xml` |
-| 2 | Agil Adinda Riza | NIM_ISI_DI_SINI | Agil-riza | `FormPesanan.kt` |
-| 3 | Tara Rosita | NIM_ISI_DI_SINI | tararosita | `KartuItem.kt` |
-| 4 | Syarifah Alya Ramatillah | NIM_ISI_DI_SINI | syarifahalya | `RingkasanPenjualan.kt` |
-| 5 | Rani Dhairi Ummayyah Maha | NIM_ISI_DI_SINI | RaniiDhairi | `HeaderKedai.kt` |
+| 1 | Teuku Fajar Rizki (ketua) | 2305903040068 | teukufajarrizky-creator | `Model.kt`, `Logika.kt`, `LogikaTest.kt`, `KasirScreen.kt`, `MainActivity.kt`, `strings.xml` |
+| 2 | Agil Adinda Riza | 2305903040075 | Agil-riza | `FormPesanan.kt` |
+| 3 | Tara Rosita | 2305903040033 | tararosita | `KartuItem.kt` |
+| 4 | Syarifah Alya Ramatillah | 2305903040006 | syarifahalya | `RingkasanPenjualan.kt` |
+| 5 | Rani Dhairi Ummayyah Maha | 2305903040040 | RaniiDhairi | `HeaderKedai.kt` |
 
 ## Video Presentasi
 
@@ -23,8 +23,7 @@ Dosen: Rivansyah Suhendra, S.Kom., M.T.
 
 ## Tentang Aplikasi
 
-Aplikasi kasir sederhana satu layar untuk kedai kopi, dibuat dengan Kotlin dan Jetpack Compose (tanpa Navigation, ViewModel, Room, atau internet).
-
+Aplikasi kasir sederhana satu layar untuk kedai kopi, dibuat dengan Kotlin dan Jetpack Compose 
 Fitur utama:
 
 - Menu tetap: kopi hitam Rp5.000, sanger Rp8.000, kopi susu Rp10.000, teh tarik Rp8.000, roti srikaya Rp6.000.
@@ -77,5 +76,5 @@ app/src/test/java/com/example/kasirkopi/
 
 AI digunakan sebagai alat bantu. Rincian lengkap ada di laporan.
 
-- Dibantu AI dan di-commit oleh ketua: `Model.kt`, `Logika.kt`, `LogikaTest.kt`, `strings.xml`, `KasirScreen.kt`, `MainActivity.kt`, serta kerangka awal `FormPesanan.kt`, `KartuItem.kt`, `RingkasanPenjualan.kt`, dan `HeaderKedai.kt`.
+- Dibantu AI dengan cara pengecheckan selaras atau tidaknya kode dan di-commit oleh ketua: `Model.kt`, `Logika.kt`, `LogikaTest.kt`, `strings.xml`, `KasirScreen.kt`, `MainActivity.kt`, serta kerangka awal `FormPesanan.kt`, `KartuItem.kt`, `RingkasanPenjualan.kt`, dan `HeaderKedai.kt`.
 - Isi `FormPesanan.kt`, `KartuItem.kt`, `RingkasanPenjualan.kt`, dan `HeaderKedai.kt` ditulis oleh masing-masing anggota. Penggunaan AI mereka untuk belajar dicatat di laporan.
